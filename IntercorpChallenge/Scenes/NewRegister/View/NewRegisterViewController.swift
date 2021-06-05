@@ -18,6 +18,8 @@ class NewRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super .viewDidLoad()
         view.backgroundColor = .systemBackground
+        lastNameTextfield.delegate = self
+        firstNameTextfield.delegate = self
         navigationItem.title = "New Register"
         alert = DDAlert()
         viewModel = NewRegisterViewModel(withView: self)
@@ -65,5 +67,17 @@ extension NewRegisterViewController: NewRegisterViewProtocol {
                 self.navigationController?.popViewController(animated: true)
             }
         }
+    }
+}
+
+
+extension NewRegisterViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == lastNameTextfield {
+            firstNameTextfield.becomeFirstResponder()
+        } else {
+            firstNameTextfield.resignFirstResponder()
+        }
+        return true
     }
 }

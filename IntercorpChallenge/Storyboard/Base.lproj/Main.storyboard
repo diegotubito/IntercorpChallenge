@@ -53,13 +53,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="jdZ-R4-qkO">
-                                <rect key="frame" x="50" y="130" width="314" height="141"/>
+                                <rect key="frame" x="50" y="173.5" width="314" height="141"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="egG-CC-uLh">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="54.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afA-KO-cRN">
-                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afA-KO-cRN">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -110,13 +110,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rU-fo-LdT">
-                                <rect key="frame" x="183.5" y="321" width="47" height="35"/>
+                                <rect key="frame" x="183.5" y="364.5" width="47" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ei-fX-2gu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username: diego@icloud.com password: admin1234" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCP-a3-Eff">
+                                <rect key="frame" x="16" y="96" width="382" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -126,12 +132,16 @@
                             <constraint firstItem="0rU-fo-LdT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jxf-mF-zFe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdZ-R4-qkO" secondAttribute="trailing" constant="50" id="WxX-ZL-n7i"/>
                             <constraint firstItem="ffo-iM-Ejv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XrC-ra-fyD"/>
+                            <constraint firstItem="jdZ-R4-qkO" firstAttribute="top" secondItem="NCP-a3-Eff" secondAttribute="bottom" constant="32" id="aU2-ET-IWd"/>
                             <constraint firstItem="0rU-fo-LdT" firstAttribute="top" secondItem="jdZ-R4-qkO" secondAttribute="bottom" constant="50" id="cQo-Eo-P0n"/>
-                            <constraint firstItem="jdZ-R4-qkO" firstAttribute="top" secondItem="ffo-iM-Ejv" secondAttribute="bottom" constant="50" id="kEm-XB-uBu"/>
+                            <constraint firstItem="NCP-a3-Eff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fom-XA-ekj"/>
+                            <constraint firstItem="NCP-a3-Eff" firstAttribute="top" secondItem="ffo-iM-Ejv" secondAttribute="bottom" constant="16" id="nlc-Vb-Ohk"/>
                             <constraint firstItem="ffo-iM-Ejv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="q0S-yR-fqF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NCP-a3-Eff" secondAttribute="trailing" constant="16" id="qtu-pc-msc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButtonOutlet" destination="0rU-fo-LdT" id="Ry2-Xj-cXQ"/>
                         <outlet property="passwordTextfield" destination="2H7-hn-fY6" id="OMR-mA-kXm"/>
                         <outlet property="usernameTextfield" destination="Q9e-ck-SAk" id="tJM-E8-nZt"/>
                     </connections>
@@ -307,6 +317,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
