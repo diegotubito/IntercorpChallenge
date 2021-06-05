@@ -61,6 +61,8 @@ extension RegisterListViewController: RegisterListViewProtocol {
     }
     
     func showError(_ message: String) {
-        alert.SingleButton(title: "Error", body: message, buttonTitle: "Ok")
+        DispatchQueue.main.async {
+            self.alert.SingleButton(title: "Alert", body: message, buttonTitle: "Ok")
+        }
     }
 }

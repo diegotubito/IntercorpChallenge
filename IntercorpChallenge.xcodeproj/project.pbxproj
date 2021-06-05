@@ -28,6 +28,7 @@
 		F1CD06D7266BCD5E00968646 /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CD06D5266BCD5E00968646 /* RegisterTableViewCell.xib */; };
 		F1CD06DC266BD72400968646 /* NewRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06DB266BD72400968646 /* NewRegisterModel.swift */; };
 		F1CD06DE266BD72D00968646 /* NewRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06DD266BD72D00968646 /* NewRegisterViewModel.swift */; };
+		F1CD06E7266BF6B200968646 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06E6266BF6B200968646 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F1CD06D5266BCD5E00968646 /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
 		F1CD06DB266BD72400968646 /* NewRegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterModel.swift; sourceTree = "<group>"; };
 		F1CD06DD266BD72D00968646 /* NewRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterViewModel.swift; sourceTree = "<group>"; };
+		F1CD06E6266BF6B200968646 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F1CD0692266A7DFC00968646 /* AppDelegate.swift */,
+				F1CD06E5266BF6A800968646 /* Splash */,
 				F1CD06B1266AF8FB00968646 /* Login */,
 				F1CD06B2266AF94600968646 /* RegisterList */,
 				F1CD06C1266BC08400968646 /* NewRegister */,
@@ -285,6 +288,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F1CD06E5266BF6A800968646 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06E6266BF6B200968646 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,6 +427,7 @@
 				F1CD06AE266AF73C00968646 /* AuthManager.swift in Sources */,
 				F1CD06D6266BCD5E00968646 /* RegisterTableViewCell.swift in Sources */,
 				F1CD06BA266AFE4D00968646 /* FirebaseModel.swift in Sources */,
+				F1CD06E7266BF6B200968646 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
