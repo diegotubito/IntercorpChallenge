@@ -12,7 +12,7 @@ class Router {
     
     static func routeToHome(window: inout UIWindow?) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let viewController = storyboard.instantiateViewController(withIdentifier: "RegisterListViewController") as! RegisterListViewController
         let navigationController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		78601EFCA8B7C554F572818D /* Pods_IntercorpChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE348DC08EC58415592EBBD /* Pods_IntercorpChallenge.framework */; };
 		F1CD0693266A7DFC00968646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD0692266A7DFC00968646 /* AppDelegate.swift */; };
-		F1CD0697266A7DFC00968646 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD0696266A7DFC00968646 /* HomeViewController.swift */; };
+		F1CD0697266A7DFC00968646 /* RegisterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD0696266A7DFC00968646 /* RegisterListViewController.swift */; };
 		F1CD069A266A7DFC00968646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CD0698266A7DFC00968646 /* Main.storyboard */; };
 		F1CD069C266A7DFE00968646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CD069B266A7DFE00968646 /* Assets.xcassets */; };
 		F1CD069F266A7DFE00968646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CD069D266A7DFE00968646 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,15 @@
 		F1CD06BA266AFE4D00968646 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06B9266AFE4D00968646 /* FirebaseModel.swift */; };
 		F1CD06BD266AFEAA00968646 /* BasicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06BC266AFEAA00968646 /* BasicExtensions.swift */; };
 		F1CD06C0266AFF4800968646 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06BF266AFF4800968646 /* Router.swift */; };
+		F1CD06C3266BC0C500968646 /* NewRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06C2266BC0C500968646 /* NewRegisterViewController.swift */; };
+		F1CD06CA266BC9FB00968646 /* RegisterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06C9266BC9FB00968646 /* RegisterListModel.swift */; };
+		F1CD06CC266BCA0A00968646 /* RegisterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06CB266BCA0A00968646 /* RegisterListViewModel.swift */; };
+		F1CD06D0266BCBA400968646 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06CF266BCBA400968646 /* CustomAlertView.swift */; };
+		F1CD06D2266BCBC800968646 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06D1266BCBC800968646 /* CustomButton.swift */; };
+		F1CD06D6266BCD5E00968646 /* RegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06D4266BCD5E00968646 /* RegisterTableViewCell.swift */; };
+		F1CD06D7266BCD5E00968646 /* RegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CD06D5266BCD5E00968646 /* RegisterTableViewCell.xib */; };
+		F1CD06DC266BD72400968646 /* NewRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06DB266BD72400968646 /* NewRegisterModel.swift */; };
+		F1CD06DE266BD72D00968646 /* NewRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06DD266BD72D00968646 /* NewRegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +36,7 @@
 		6C41C8801D813F54D22E98CF /* Pods-IntercorpChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercorpChallenge.debug.xcconfig"; path = "Target Support Files/Pods-IntercorpChallenge/Pods-IntercorpChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F1CD068F266A7DFC00968646 /* IntercorpChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntercorpChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CD0692266A7DFC00968646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1CD0696266A7DFC00968646 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F1CD0696266A7DFC00968646 /* RegisterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterListViewController.swift; sourceTree = "<group>"; };
 		F1CD0699266A7DFC00968646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1CD069B266A7DFE00968646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1CD069E266A7DFE00968646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +47,15 @@
 		F1CD06B9266AFE4D00968646 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		F1CD06BC266AFEAA00968646 /* BasicExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicExtensions.swift; sourceTree = "<group>"; };
 		F1CD06BF266AFF4800968646 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F1CD06C2266BC0C500968646 /* NewRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterViewController.swift; sourceTree = "<group>"; };
+		F1CD06C9266BC9FB00968646 /* RegisterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterListModel.swift; sourceTree = "<group>"; };
+		F1CD06CB266BCA0A00968646 /* RegisterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterListViewModel.swift; sourceTree = "<group>"; };
+		F1CD06CF266BCBA400968646 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		F1CD06D1266BCBC800968646 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F1CD06D4266BCD5E00968646 /* RegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableViewCell.swift; sourceTree = "<group>"; };
+		F1CD06D5266BCD5E00968646 /* RegisterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterTableViewCell.xib; sourceTree = "<group>"; };
+		F1CD06DB266BD72400968646 /* NewRegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterModel.swift; sourceTree = "<group>"; };
+		F1CD06DD266BD72D00968646 /* NewRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +108,7 @@
 		F1CD0691266A7DFC00968646 /* IntercorpChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F1CD06CE266BCB9800968646 /* CustomView */,
 				F1CD06A8266AC43300968646 /* Resources */,
 				F1CD06A7266AC42700968646 /* Scenes */,
 				F1CD06A6266AC42000968646 /* Common */,
@@ -113,8 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				F1CD0692266A7DFC00968646 /* AppDelegate.swift */,
-				F1CD06B2266AF94600968646 /* Home */,
 				F1CD06B1266AF8FB00968646 /* Login */,
+				F1CD06B2266AF94600968646 /* RegisterList */,
+				F1CD06C1266BC08400968646 /* NewRegister */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -154,12 +174,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		F1CD06B2266AF94600968646 /* Home */ = {
+		F1CD06B2266AF94600968646 /* RegisterList */ = {
 			isa = PBXGroup;
 			children = (
-				F1CD0696266A7DFC00968646 /* HomeViewController.swift */,
+				F1CD06C8266BC92300968646 /* Model */,
+				F1CD06C7266BC91F00968646 /* ViewModel */,
+				F1CD06C6266BC91C00968646 /* View */,
 			);
-			path = Home;
+			path = RegisterList;
 			sourceTree = "<group>";
 		};
 		F1CD06B8266AFE4400968646 /* Model */ = {
@@ -184,6 +206,83 @@
 				F1CD06BF266AFF4800968646 /* Router.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		F1CD06C1266BC08400968646 /* NewRegister */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06DA266BD6FE00968646 /* Model */,
+				F1CD06D9266BD6FA00968646 /* ViewModel */,
+				F1CD06D8266BD6F700968646 /* View */,
+			);
+			path = NewRegister;
+			sourceTree = "<group>";
+		};
+		F1CD06C6266BC91C00968646 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD0696266A7DFC00968646 /* RegisterListViewController.swift */,
+				F1CD06D3266BCD4800968646 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1CD06C7266BC91F00968646 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06CB266BCA0A00968646 /* RegisterListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1CD06C8266BC92300968646 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06C9266BC9FB00968646 /* RegisterListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1CD06CE266BCB9800968646 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06CF266BCBA400968646 /* CustomAlertView.swift */,
+				F1CD06D1266BCBC800968646 /* CustomButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F1CD06D3266BCD4800968646 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06D4266BCD5E00968646 /* RegisterTableViewCell.swift */,
+				F1CD06D5266BCD5E00968646 /* RegisterTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F1CD06D8266BD6F700968646 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06C2266BC0C500968646 /* NewRegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1CD06D9266BD6FA00968646 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06DD266BD72D00968646 /* NewRegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1CD06DA266BD6FE00968646 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06DB266BD72400968646 /* NewRegisterModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +346,7 @@
 			files = (
 				F1CD069F266A7DFE00968646 /* LaunchScreen.storyboard in Resources */,
 				F1CD06AB266AEB5300968646 /* GoogleService-Info.plist in Resources */,
+				F1CD06D7266BCD5E00968646 /* RegisterTableViewCell.xib in Resources */,
 				F1CD069C266A7DFE00968646 /* Assets.xcassets in Resources */,
 				F1CD069A266A7DFC00968646 /* Main.storyboard in Resources */,
 			);
@@ -302,11 +402,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CD06BD266AFEAA00968646 /* BasicExtensions.swift in Sources */,
+				F1CD06CC266BCA0A00968646 /* RegisterListViewModel.swift in Sources */,
+				F1CD06D0266BCBA400968646 /* CustomAlertView.swift in Sources */,
+				F1CD06DC266BD72400968646 /* NewRegisterModel.swift in Sources */,
+				F1CD06C3266BC0C500968646 /* NewRegisterViewController.swift in Sources */,
 				F1CD06B0266AF8F800968646 /* LoginViewController.swift in Sources */,
-				F1CD0697266A7DFC00968646 /* HomeViewController.swift in Sources */,
+				F1CD0697266A7DFC00968646 /* RegisterListViewController.swift in Sources */,
 				F1CD06C0266AFF4800968646 /* Router.swift in Sources */,
 				F1CD0693266A7DFC00968646 /* AppDelegate.swift in Sources */,
+				F1CD06DE266BD72D00968646 /* NewRegisterViewModel.swift in Sources */,
+				F1CD06D2266BCBC800968646 /* CustomButton.swift in Sources */,
+				F1CD06CA266BC9FB00968646 /* RegisterListModel.swift in Sources */,
 				F1CD06AE266AF73C00968646 /* AuthManager.swift in Sources */,
+				F1CD06D6266BCD5E00968646 /* RegisterTableViewCell.swift in Sources */,
 				F1CD06BA266AFE4D00968646 /* FirebaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -439,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
