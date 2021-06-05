@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		78601EFCA8B7C554F572818D /* Pods_IntercorpChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE348DC08EC58415592EBBD /* Pods_IntercorpChallenge.framework */; };
+		C58BAE4FCAFCE971D9AFF19C /* Pods_IntercorpChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAF013E5DEA11312B8312A3 /* Pods_IntercorpChallengeTests.framework */; };
+		F1176868266C2E3700BC4E8E /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1176867266C2E3700BC4E8E /* CommonMethods.swift */; };
+		F1176869266C2EE700BC4E8E /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1176867266C2E3700BC4E8E /* CommonMethods.swift */; };
 		F1CD0693266A7DFC00968646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD0692266A7DFC00968646 /* AppDelegate.swift */; };
 		F1CD0697266A7DFC00968646 /* RegisterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD0696266A7DFC00968646 /* RegisterListViewController.swift */; };
 		F1CD069A266A7DFC00968646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CD0698266A7DFC00968646 /* Main.storyboard */; };
@@ -28,12 +31,31 @@
 		F1CD06DC266BD72400968646 /* NewRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06DB266BD72400968646 /* NewRegisterModel.swift */; };
 		F1CD06DE266BD72D00968646 /* NewRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06DD266BD72D00968646 /* NewRegisterViewModel.swift */; };
 		F1CD06E7266BF6B200968646 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06E6266BF6B200968646 /* SplashViewController.swift */; };
+		F1CD06FF266C239100968646 /* IntercorpChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06FE266C239100968646 /* IntercorpChallengeTests.swift */; };
+		F1CD070A266C27BC00968646 /* mock_firebase_response.json in Resources */ = {isa = PBXBuildFile; fileRef = F1CD0708266C271600968646 /* mock_firebase_response.json */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F1CD0701266C239100968646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1CD0687266A7DFC00968646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CD068E266A7DFC00968646;
+			remoteInfo = IntercorpChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		00B028E3CEA0FD3E6FD0B2CE /* Pods-IntercorpChallenge-IntercorpChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercorpChallenge-IntercorpChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-IntercorpChallenge-IntercorpChallengeUITests/Pods-IntercorpChallenge-IntercorpChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0EE348DC08EC58415592EBBD /* Pods_IntercorpChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntercorpChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204477AC75AB653657770402 /* Pods_IntercorpChallenge_IntercorpChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntercorpChallenge_IntercorpChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAF013E5DEA11312B8312A3 /* Pods_IntercorpChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntercorpChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B94D0DB570E6700D2D0DE24 /* Pods-IntercorpChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercorpChallenge.release.xcconfig"; path = "Target Support Files/Pods-IntercorpChallenge/Pods-IntercorpChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		6C41C8801D813F54D22E98CF /* Pods-IntercorpChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercorpChallenge.debug.xcconfig"; path = "Target Support Files/Pods-IntercorpChallenge/Pods-IntercorpChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		95AE986B3D71281F28DB1BBC /* Pods-IntercorpChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercorpChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-IntercorpChallengeTests/Pods-IntercorpChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BFFAAE71B5760627FC6564B /* Pods-IntercorpChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercorpChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-IntercorpChallengeTests/Pods-IntercorpChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B35F12C112C85BCB1EEE9829 /* Pods-IntercorpChallenge-IntercorpChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercorpChallenge-IntercorpChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-IntercorpChallenge-IntercorpChallengeUITests/Pods-IntercorpChallenge-IntercorpChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1176867266C2E3700BC4E8E /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 		F1CD068F266A7DFC00968646 /* IntercorpChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntercorpChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CD0692266A7DFC00968646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CD0696266A7DFC00968646 /* RegisterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterListViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +78,10 @@
 		F1CD06DB266BD72400968646 /* NewRegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterModel.swift; sourceTree = "<group>"; };
 		F1CD06DD266BD72D00968646 /* NewRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterViewModel.swift; sourceTree = "<group>"; };
 		F1CD06E6266BF6B200968646 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F1CD06FC266C239100968646 /* IntercorpChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntercorpChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CD06FE266C239100968646 /* IntercorpChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpChallengeTests.swift; sourceTree = "<group>"; };
+		F1CD0700266C239100968646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CD0708266C271600968646 /* mock_firebase_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_firebase_response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +93,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1CD06F9266C239100968646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58BAE4FCAFCE971D9AFF19C /* Pods_IntercorpChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				0EE348DC08EC58415592EBBD /* Pods_IntercorpChallenge.framework */,
+				204477AC75AB653657770402 /* Pods_IntercorpChallenge_IntercorpChallengeUITests.framework */,
+				5DAF013E5DEA11312B8312A3 /* Pods_IntercorpChallengeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,14 +119,27 @@
 			children = (
 				6C41C8801D813F54D22E98CF /* Pods-IntercorpChallenge.debug.xcconfig */,
 				6B94D0DB570E6700D2D0DE24 /* Pods-IntercorpChallenge.release.xcconfig */,
+				B35F12C112C85BCB1EEE9829 /* Pods-IntercorpChallenge-IntercorpChallengeUITests.debug.xcconfig */,
+				00B028E3CEA0FD3E6FD0B2CE /* Pods-IntercorpChallenge-IntercorpChallengeUITests.release.xcconfig */,
+				95AE986B3D71281F28DB1BBC /* Pods-IntercorpChallengeTests.debug.xcconfig */,
+				9BFFAAE71B5760627FC6564B /* Pods-IntercorpChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1176866266C2E2A00BC4E8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1176867266C2E3700BC4E8E /* CommonMethods.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F1CD0686266A7DFC00968646 = {
 			isa = PBXGroup;
 			children = (
 				F1CD0691266A7DFC00968646 /* IntercorpChallenge */,
+				F1CD06FD266C239100968646 /* IntercorpChallengeTests */,
 				F1CD0690266A7DFC00968646 /* Products */,
 				225EF07D67FCD5718271E62D /* Pods */,
 				08F65EB130AEB3E99184DDCE /* Frameworks */,
@@ -101,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				F1CD068F266A7DFC00968646 /* IntercorpChallenge.app */,
+				F1CD06FC266C239100968646 /* IntercorpChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +170,7 @@
 		F1CD06A6266AC42000968646 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F1176866266C2E2A00BC4E8E /* Utils */,
 				F1CD06BE266AFF3F00968646 /* Router */,
 				F1CD06BB266AFEA100968646 /* Extensions */,
 				F1CD06AC266AF73200968646 /* Service */,
@@ -285,6 +336,16 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		F1CD06FD266C239100968646 /* IntercorpChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD06FE266C239100968646 /* IntercorpChallengeTests.swift */,
+				F1CD0700266C239100968646 /* Info.plist */,
+				F1CD0708266C271600968646 /* mock_firebase_response.json */,
+			);
+			path = IntercorpChallengeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +368,26 @@
 			productReference = F1CD068F266A7DFC00968646 /* IntercorpChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F1CD06FB266C239100968646 /* IntercorpChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CD0703266C239100968646 /* Build configuration list for PBXNativeTarget "IntercorpChallengeTests" */;
+			buildPhases = (
+				1F002D8E58069E30DF8730B4 /* [CP] Check Pods Manifest.lock */,
+				F1CD06F8266C239100968646 /* Sources */,
+				F1CD06F9266C239100968646 /* Frameworks */,
+				F1CD06FA266C239100968646 /* Resources */,
+				98C39AD752D0E128107C19BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1CD0702266C239100968646 /* PBXTargetDependency */,
+			);
+			name = IntercorpChallengeTests;
+			productName = IntercorpChallengeTests;
+			productReference = F1CD06FC266C239100968646 /* IntercorpChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -318,6 +399,10 @@
 				TargetAttributes = {
 					F1CD068E266A7DFC00968646 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					F1CD06FB266C239100968646 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F1CD068E266A7DFC00968646;
 					};
 				};
 			};
@@ -335,6 +420,7 @@
 			projectRoot = "";
 			targets = (
 				F1CD068E266A7DFC00968646 /* IntercorpChallenge */,
+				F1CD06FB266C239100968646 /* IntercorpChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,6 +435,14 @@
 				F1CD06D7266BCD5E00968646 /* RegisterTableViewCell.xib in Resources */,
 				F1CD069C266A7DFE00968646 /* Assets.xcassets in Resources */,
 				F1CD069A266A7DFC00968646 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CD06FA266C239100968646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CD070A266C27BC00968646 /* mock_firebase_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +464,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntercorpChallenge/Pods-IntercorpChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F002D8E58069E30DF8730B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntercorpChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		31488649BDFDAB0E00D11043 /* [CP] Check Pods Manifest.lock */ = {
@@ -394,6 +510,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		98C39AD752D0E128107C19BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntercorpChallengeTests/Pods-IntercorpChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntercorpChallengeTests/Pods-IntercorpChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntercorpChallengeTests/Pods-IntercorpChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -412,6 +545,7 @@
 				F1CD0693266A7DFC00968646 /* AppDelegate.swift in Sources */,
 				F1CD06DE266BD72D00968646 /* NewRegisterViewModel.swift in Sources */,
 				F1CD06D2266BCBC800968646 /* CustomButton.swift in Sources */,
+				F1176868266C2E3700BC4E8E /* CommonMethods.swift in Sources */,
 				F1CD06CA266BC9FB00968646 /* RegisterListModel.swift in Sources */,
 				F1CD06AE266AF73C00968646 /* AuthManager.swift in Sources */,
 				F1CD06D6266BCD5E00968646 /* RegisterTableViewCell.swift in Sources */,
@@ -419,7 +553,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1CD06F8266C239100968646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CD06FF266C239100968646 /* IntercorpChallengeTests.swift in Sources */,
+				F1176869266C2EE700BC4E8E /* CommonMethods.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1CD0702266C239100968646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CD068E266A7DFC00968646 /* IntercorpChallenge */;
+			targetProxy = F1CD0701266C239100968646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F1CD0698266A7DFC00968646 /* Main.storyboard */ = {
@@ -601,6 +752,50 @@
 			};
 			name = Release;
 		};
+		F1CD0704266C239100968646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95AE986B3D71281F28DB1BBC /* Pods-IntercorpChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2BEC8V882;
+				INFOPLIST_FILE = IntercorpChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ddg.IntercorpChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntercorpChallenge.app/IntercorpChallenge";
+			};
+			name = Debug;
+		};
+		F1CD0705266C239100968646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFFAAE71B5760627FC6564B /* Pods-IntercorpChallengeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2BEC8V882;
+				INFOPLIST_FILE = IntercorpChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ddg.IntercorpChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntercorpChallenge.app/IntercorpChallenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,6 +813,15 @@
 			buildConfigurations = (
 				F1CD06A4266A7DFE00968646 /* Debug */,
 				F1CD06A5266A7DFE00968646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1CD0703266C239100968646 /* Build configuration list for PBXNativeTarget "IntercorpChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CD0704266C239100968646 /* Debug */,
+				F1CD0705266C239100968646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

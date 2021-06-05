@@ -38,18 +38,14 @@ class RegisterListViewModel: RegisterListViewModelProtocol {
             if let error = error {
                 self.view.showError("Error getting data \(error.localizedDescription)")
             } else if snapshot.exists() {
-                guard let firebaseData = snapshot.value as? NSDictionary else { return }
-                var dictionaryItems: [[String: Any]] = []
+                guard let firebaseData = snapshot.value as? [String: Any] else { return }
                 
-                for (_, value) in firebaseData {
-                    if let register = value as? [String: Any] {
-                        dictionaryItems.append(register)
-                    }
-                }
+                let dictionaryItems = removeKeys(source: firebaseData)
+                
                 guard
                     let data = try? JSONSerialization.data(withJSONObject: dictionaryItems, options: []),
                     let registers = try? JSONDecoder().decode([RegisterModel].self, from: data) else {
-                    self.view.showError("serialization error")
+                    self.view.showError("Serialization error")
                     
                     return
                 }
@@ -57,7 +53,7 @@ class RegisterListViewModel: RegisterListViewModelProtocol {
                 self.model.items = registers
                 self.view.showSuccess()
             } else {
-                self.view.showError("no data available")
+                self.view.showError("No data available, you can add new registers.")
             }
         }
     }
