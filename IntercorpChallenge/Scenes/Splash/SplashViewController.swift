@@ -10,5 +10,6 @@ import UIKit
 class SplahViewController: UIViewController {
     override func viewDidLoad() {
         super .viewDidLoad()
+        AuthManager.shared.listenAuthChanges()
     }
 }

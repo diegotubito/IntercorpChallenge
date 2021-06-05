@@ -19,15 +19,11 @@ class Router {
     }
     
     static func routeToLogin(window: inout UIWindow?) {
-        //let bundle = Bundle(for: LoginVerifyEmail.self)
-        
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
     }
-    
-    
 }
 
 

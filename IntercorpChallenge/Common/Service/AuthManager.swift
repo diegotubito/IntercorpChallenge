@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 
-open class AuthManager {
+class AuthManager {
     static public let shared = AuthManager()
     static private var authListener : AuthStateDidChangeListenerHandle!
     static public var userData : User?
@@ -17,7 +17,6 @@ open class AuthManager {
         AuthManager.authListener = Auth.auth().addStateDidChangeListener() { auth, user in
             AuthManager.userData = user
             guard let user = user else {
-                print("no user logged in")
                 NotificationCenter.default.post(name: .NeedLogin, object: nil)
                 return
             }
@@ -27,23 +26,9 @@ open class AuthManager {
                     print("some error ocurred reloading user firebase auth")
                     return
                 }
-                print("login")
                 NotificationCenter.default.post(name: .DidLogin, object: nil)
             }
         }
-    }
-    
-    
-    public func registerNewUser(email: String, password: String, success: @escaping (AuthDataResult?) -> Void, fail: @escaping (Error) -> Void) {
-        
-        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-            guard error == nil else {
-                fail(error!)
-                return
-            }
-            success(user)
-        }
-        
     }
     
     public func signOut() {
@@ -54,7 +39,6 @@ open class AuthManager {
         }
     }
     
-    
     public func signInWithEmail(email: String, password: String, success: @escaping (AuthDataResult?) -> Void, fail: @escaping (Error?) -> Void) {
         
         Auth.auth().signIn(withEmail: email, password: password) { (usuario, error) in
@@ -64,21 +48,6 @@ open class AuthManager {
             }
             
             success(usuario)
-        }
-    }
-    
-    public func getUserByEmail(email: String, success: @escaping ([String]?) -> Void, fail: @escaping (Error?) -> Void) {
-        Auth.auth().fetchSignInMethods(forEmail: email) { (response, error) in
-            guard error == nil else {
-                fail(error!)
-                return
-            }
-            guard let response = response else {
-                fail(nil)
-                return
-            }
-            
-            success(response)
         }
     }
 }

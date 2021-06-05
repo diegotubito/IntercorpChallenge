@@ -16,7 +16,6 @@
 		F1CD06AB266AEB5300968646 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1CD06AA266AEB5300968646 /* GoogleService-Info.plist */; };
 		F1CD06AE266AF73C00968646 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06AD266AF73C00968646 /* AuthManager.swift */; };
 		F1CD06B0266AF8F800968646 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06AF266AF8F800968646 /* LoginViewController.swift */; };
-		F1CD06BA266AFE4D00968646 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06B9266AFE4D00968646 /* FirebaseModel.swift */; };
 		F1CD06BD266AFEAA00968646 /* BasicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06BC266AFEAA00968646 /* BasicExtensions.swift */; };
 		F1CD06C0266AFF4800968646 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06BF266AFF4800968646 /* Router.swift */; };
 		F1CD06C3266BC0C500968646 /* NewRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD06C2266BC0C500968646 /* NewRegisterViewController.swift */; };
@@ -45,7 +44,6 @@
 		F1CD06AA266AEB5300968646 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1CD06AD266AF73C00968646 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		F1CD06AF266AF8F800968646 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F1CD06B9266AFE4D00968646 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		F1CD06BC266AFEAA00968646 /* BasicExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicExtensions.swift; sourceTree = "<group>"; };
 		F1CD06BF266AFF4800968646 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		F1CD06C2266BC0C500968646 /* NewRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterViewController.swift; sourceTree = "<group>"; };
@@ -110,10 +108,10 @@
 		F1CD0691266A7DFC00968646 /* IntercorpChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				F1CD06CE266BCB9800968646 /* CustomView */,
-				F1CD06A8266AC43300968646 /* Resources */,
-				F1CD06A7266AC42700968646 /* Scenes */,
 				F1CD06A6266AC42000968646 /* Common */,
+				F1CD06CE266BCB9800968646 /* CustomView */,
+				F1CD06A7266AC42700968646 /* Scenes */,
+				F1CD06A8266AC43300968646 /* Resources */,
 				F1CD06A9266AC44E00968646 /* Storyboard */,
 			);
 			path = IntercorpChallenge;
@@ -124,7 +122,6 @@
 			children = (
 				F1CD06BE266AFF3F00968646 /* Router */,
 				F1CD06BB266AFEA100968646 /* Extensions */,
-				F1CD06B8266AFE4400968646 /* Model */,
 				F1CD06AC266AF73200968646 /* Service */,
 			);
 			path = Common;
@@ -185,14 +182,6 @@
 				F1CD06C6266BC91C00968646 /* View */,
 			);
 			path = RegisterList;
-			sourceTree = "<group>";
-		};
-		F1CD06B8266AFE4400968646 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F1CD06B9266AFE4D00968646 /* FirebaseModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F1CD06BB266AFEA100968646 /* Extensions */ = {
@@ -426,7 +415,6 @@
 				F1CD06CA266BC9FB00968646 /* RegisterListModel.swift in Sources */,
 				F1CD06AE266AF73C00968646 /* AuthManager.swift in Sources */,
 				F1CD06D6266BCD5E00968646 /* RegisterTableViewCell.swift in Sources */,
-				F1CD06BA266AFE4D00968646 /* FirebaseModel.swift in Sources */,
 				F1CD06E7266BF6B200968646 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
